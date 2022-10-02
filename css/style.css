@@ -66,12 +66,6 @@ body {
   text-decoration: none;
 }
 
-.navbar-links {
-  float: right !important;
-  height: 100%;
-  margin-right: 10rem;
-}
-
 .item {
   list-style-type: none;
   padding: 0.625rem 0;
@@ -85,7 +79,17 @@ body {
   color: var(--fontColor);
   font-weight: bold;
   font-size: 1rem;
-  transition: all 0.1s;
+}
+
+.navbar-links {
+  float: right !important;
+  height: 100%;
+  margin-right: 10rem;
+}
+
+.navbar-link {
+  border-bottom: 0rem solid;
+  transition: all 0.1s ease-in;
 }
 
 .navbar-link:hover {
