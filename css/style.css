@@ -1,0 +1,153 @@
+:root {
+  --fontColor: #ff8d29;
+  --upperColor: #fdeedc;
+  --contentColor: #ffd8a9;
+  --bottomColor: #f1a661;
+  --footerColor: #e38b29;
+  --acceptColor: #00ac0e;
+  --cancelColor: #a00000;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.navbar {
+  background-color: var(--upperColor);
+  width: 100%;
+}
+
+.navbar-fixed-top {
+  position: fixed;
+  height: 3rem;
+}
+
+.navbar-user-nav {
+  justify-content: flex-end !important;
+  align-items: center;
+  height: 100%;
+  margin: 0 8rem;
+}
+
+.navbar-menu {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navbar-logo {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  background-color: white;
+  padding: 3rem 0 0;
+}
+
+.logo {
+  width: 28rem;
+}
+
+.icon-link {
+  transform: translateX(-50%) translateY(-15%);
+  position: absolute;
+  width: 1.5rem;
+}
+
+.link-picture {
+  text-decoration: none;
+}
+
+.navbar-links {
+  float: right !important;
+  height: 100%;
+  margin-right: 10rem;
+}
+
+.item {
+  list-style-type: none;
+  padding: 0.625rem 0;
+  margin: 0 1.5rem;
+}
+
+.link {
+  text-decoration: none;
+  padding: 0.35rem 2rem;
+  cursor: pointer;
+  color: var(--fontColor);
+  font-weight: bold;
+  font-size: 1rem;
+  transition: all 0.1s;
+}
+
+.navbar-link:hover {
+  border-bottom: 0.275rem solid;
+}
+
+.user-link {
+  text-decoration: none;
+  padding: 0.9rem 2rem;
+  cursor: pointer;
+  color: var(--fontColor);
+  font-weight: bold;
+  font-size: 1rem;
+  transition: all 0.35s ease;
+}
+
+.user-link:hover {
+  color: var(--upperColor);
+  background-color: var(--fontColor);
+}
+
+.link:active {
+  text-decoration: none;
+}
+
+.btn {
+  background: transparent;
+  background-color: blueviolet;
+  padding: 0.5rem 1.5rem;
+  color: white;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;
+}
+
+.btn:hover {
+  opacity: 90%;
+  color: white;
+}
+
+.content {
+  height: 100%;
+  background-color: var(--contentColor);
+}
+
+.bottom-container {
+  background-color: var(--bottomColor);
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row-reverse;
+  padding: 0.5rem;
+}
+
+.footer-social-img {
+  height: 45px;
+  width: auto;
+  transition: all 0.5s;
+}
+
+.link-footer {
+  padding: 0 0.5rem;
+}
+
+.footer-social-img:hover {
+  transform: scale(1.25);
+}
