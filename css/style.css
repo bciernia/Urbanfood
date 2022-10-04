@@ -124,10 +124,11 @@ body {
   color: white;
   cursor: pointer;
   font-family: "Montserrat", sans-serif;
+  transition: opacity 0.5s ease;
 }
 
 .btn:hover {
-  opacity: 90%;
+  opacity: 75%;
   color: white;
 }
 
@@ -189,7 +190,7 @@ body {
 
 .user-avatar {
   width: 10rem;
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 .input {
