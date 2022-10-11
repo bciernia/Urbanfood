@@ -7,6 +7,7 @@
   --acceptColor: #00ac0e;
   --cancelColor: #a00000;
   --formColor: #ffb85c81;
+  --postColor: #e4a14f;
 }
 
 * {
@@ -29,6 +30,7 @@ body {
 .navbar-fixed-top {
   position: fixed;
   height: 3rem;
+  z-index: 10;  
 }
 
 .navbar-user-nav {
@@ -116,6 +118,10 @@ body {
   text-decoration: none;
 }
 
+.link-post{
+  margin: 5rem;
+}
+
 .btn {
   margin: 1.5rem;
   background: transparent;
@@ -132,9 +138,27 @@ body {
   color: white;
 }
 
-.content {
-  height: 100%;
-  background-color: var(--contentColor);
+.index-h1{
+  margin-top: 1rem;
+}
+
+.content-post{
+  width: 60%;
+  text-align: center;
+  background-color: var(--postColor);
+  border: 3px solid;
+  border-radius: 0.625rem;
+  margin: 2rem;
+  padding: 0 1rem 1rem;
+}
+
+.content-post h2{
+  margin: 1rem 0;
+  font-size: 1.5rem;
+}
+
+.content-post p{
+  margin-bottom: 0.75rem;
 }
 
 .bottom-container {
@@ -168,6 +192,23 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--contentColor);
+}
+
+.content-object{
+  position: absolute;
+  z-index: 1;
+}
+
+.content-object-left{
+  left: 3rem;
+  top: 20rem;
+}
+
+.content-object-right{
+  right: 3rem;
+  bottom: 10rem;
 }
 
 .information-content {
